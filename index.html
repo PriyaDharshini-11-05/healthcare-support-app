@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MediCare Support Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <h2>🏥 Mini Health Care Support Hub</h2>
+  <nav>
+    <a href="#form">Register</a>
+    <a href="#chat">AI Help</a>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <h1>Healthcare Support Made Simple</h1>
+  <p>Connect patients, volunteers & healthcare support instantly</p>
+  <button onclick="document.getElementById('form').scrollIntoView()">Get Started</button>
+</section>
+
+<!-- FORM SECTION -->
+<section id="form" class="card">
+  <h2>Patient / Volunteer Registration</h2>
+
+  <input type="text" id="name" placeholder="Full Name">
+  <input type="number" id="age" placeholder="Age">
+  <select id="role">
+    <option>Patient</option>
+    <option>Volunteer</option>
+  </select>
+  <textarea id="message" placeholder="Describe your need"></textarea>
+
+  <button onclick="submitForm()">Submit</button>
+
+  <p id="result"></p>
+</section>
+
+<!-- AI CHATBOT SECTION -->
+<section id="chat" class="card">
+  <h2>🤖 AI Health Assistant (FAQ Bot)</h2>
+
+  <div id="chatbox"></div>
+
+  <input type="text" id="userInput" placeholder="Ask something like 'fever symptoms?'">
+  <button onclick="chat()">Send</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Mini Health Care Support Hub | Built for Internship Assignment</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
